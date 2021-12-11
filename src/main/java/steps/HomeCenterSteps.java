@@ -16,13 +16,7 @@ public class HomeCenterSteps {
 
     public void abrirPagina() {
         GoogleChromeDriver.chromeWebDriver("https://www.homecenter.com.co/");
-        try {
-            listaProductos = ExcelSteps.leerDatosDeHojaDeExcel("Productos.xlsx", "Hoja1");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-    }
+           }
 
 
     public void buscarElementoEnHomeCenter(String producto) {

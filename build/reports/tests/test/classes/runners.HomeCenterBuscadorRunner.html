@@ -87,22 +87,21 @@
 <span class="code">
 <pre>
 ?[31mFailed scenarios:?[0m
-?[31msrc/test/resources/features/HomeCenterBuscador.feature:16 ?[0m# Buscar Producto
 ?[31msrc/test/resources/features/HomeCenterBuscador.feature:17 ?[0m# Buscar Producto
 
-5 Scenarios (?[31m2 failed?[0m, ?[32m3 passed?[0m)
-15 Steps (?[31m2 failed?[0m, ?[36m1 skipped?[0m, ?[32m12 passed?[0m)
-3m12,101s
+5 Scenarios (?[31m1 failed?[0m, ?[32m4 passed?[0m)
+15 Steps (?[31m1 failed?[0m, ?[36m1 skipped?[0m, ?[32m13 passed?[0m)
+3m40,771s
 
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[contains(text(),'Silla Ejecutiva Cromada con Brazos Negra')]&quot;}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@id='title-pdp-link']/h2[contains(text(),'Panel Oriental 180x220 cm Beige Linen')]&quot;}
   (Session info: chrome=96.0.4664.45)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-OGAE194', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\RUSHCA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54338}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ff5c85ecc8a231f5de65abf98f18ad14
-*** Element info: {Using=xpath, value=//h1[contains(text(),'Silla Ejecutiva Cromada con Brazos Negra')]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\RUSHCA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59913}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b15f229524c17b9a3398d4f7bb01578
+*** Element info: {Using=xpath, value=//a[@id='title-pdp-link']/h2[contains(text(),'Panel Oriental 180x220 cm Beige Linen')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -117,30 +116,7 @@ Session ID: ff5c85ecc8a231f5de65abf98f18ad14
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at steps.HomeCenterSteps.validarElementoEnPantalla(HomeCenterSteps.java:39)
-	at stepsDefinitions.HomeCenterBuscadorStepDefinitions.podreVerElProductoDeLaEnLaEnPantalla(HomeCenterBuscadorStepDefinitions.java:34)
-	at ?.podre ver el producto de la&quot;Hoja1&quot; en la 3 en pantalla(src/test/resources/features/HomeCenterBuscador.feature:10)
-
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 60 60&quot; width=&quot;26&quot; height=&quot;26&quot; class=&quot;DesktopSearchBar-module_lens-icon__2x7d_&quot;&gt;...&lt;/svg&gt; is not clickable at point (812, 73). Other element would receive the click: &lt;div class=&quot;Location-module_tooltip-reminder__3vbSS&quot; data-testid=&quot;tooltip-reminder&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=96.0.4664.45)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-OGAE194', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\RUSHCA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c20fda2468a9d05c2d62855ac9647553
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at steps.HomeCenterSteps.buscarElementoEnHomeCenter(HomeCenterSteps.java:30)
+	at steps.HomeCenterSteps.buscarElementoEnHomeCenter(HomeCenterSteps.java:26)
 	at stepsDefinitions.HomeCenterBuscadorStepDefinitions.busqueElProductoEnLaHojaDelExcelEnLaFila(HomeCenterBuscadorStepDefinitions.java:27)
 	at ?.busque el producto en la hoja  &quot;Hoja1&quot; del excel en la fila 4(src/test/resources/features/HomeCenterBuscador.feature:9)
 
@@ -189,7 +165,7 @@ TEST STARTED: Buscar Producto
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 11/12/2021 01:24:24 AM</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at 11/12/2021 02:07:21 AM</p>
 </div>
 </div>
 </body>

@@ -3,7 +3,7 @@ Feature: HU-001 Buscador Home Center
   Quiero buscar varios productos en la plataforma
   Para ver el nombre del producto en pantalla
 
-  @
+  
   Scenario Outline: Buscar Producto
     Given que me encuentro en la pagina de ML
     When busque el producto en la hoja  "<hojaDeExcel>" del excel en la fila <fila>
